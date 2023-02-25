@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Recipe Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Recipe Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="search-container">
+        <h2>Search Recipes</h2>
+        <div id ="search-form">
+          <input  type="text" name="txtSearch" id="txtSearch" placeholder="Enter Recipe Name" required />
+          <button class="btn btn-success btn-lg search-btn" onclick="search()">Search</button>
+          <div class="drop-menu">
+           
+            <label for="cuisine-select"></label>
+          <select id="cuisine-select">
+            <option value="">All Cuisines</option>
+            <option value="african">African</option>
+            <option value="american">American</option>
+            <option value="british">British</option>
+            <option value="chinese">Chinese</option>
+            <option value="french">French</option>
+            <option value="indian">Indian</option>
+            <option value="italian">Italian</option>
+            <option value="japanese">Japanese</option>
+            <option value="mexican">Mexican</option>
+            <option value="spanish">Spanish</option>
+            <option value="thai">Thai</option>
+          </select>
+         
+  
+</div>
+        </div>
+      </div>
+      <ul id="results-list"></ul>
+      <div id="pagination" class="pagination"></div>
+      <div class="col-sm-12" id="myDIV">
+        <img src= "pasta.jpg" class="header-img">
+    </div>
+  </div> <!-- end of row -->
+  <div class="row my-3" style="display: none;" id="imgraw">
+
+  </div>
+</div> <!-- end of container -->
+
+
+  <!-- ----------------------------------------------------------------------------------------------------
+                  search results
+  ------------------------------------------------------------------------------------------------------ -->
+
+      <div class="container-fluid">
+        <div class="row"id="results-div">
+
+            </div> <!-- end of results-div -->
+        </div> <!-- end of row -->
+      </div> <!-- end of container -->
+     
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+   
+    
+  </body>
+</html>
