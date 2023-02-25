@@ -7,3 +7,9 @@
 <p>Bootstrap</p>
 <p>CSS and HTML</p>
 
+## Read more about the recipe
+![Design preview](pasta.jpg)
+
+## Live Version
+
+Please follow this url to run my application: https://recipefood-4fe597.netlify.app/
